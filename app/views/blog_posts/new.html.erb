@@ -1,0 +1,12 @@
+<h1>Make a new Blog</h1>
+
+<%= form_with model: @blog_post do |form| %>
+<div style="display: flex; align-items: center; justify-contant: center; flex-direction: column;">
+    <%= form.label :title, "Title of Post" %>
+    <%= form.text_field :title %>
+    <%= form.label :body,"Add the Post content here"%>
+    <%= form.text_area :body%>
+    <%= form.button %>
+</div>
+
+<% end %>
